@@ -3,21 +3,20 @@
     <div class="container-fluid">
       <a class="navbar-brand ms-5 m-2 text-danger" href="{% url 'home' %}">PortFolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse d-flex justify-content-center align-items-center me-5" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" style="margin-right: 10px;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'home' %}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'about' %}">About</a>
+            <a class="nav-link {% if request.path == '/about/' %}active{% endif %}" href="{% url 'about' %}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+            <a class="nav-link {% if request.path == '/projects/' %}active{% endif %}" href="{% url 'projects' %}">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            <a class="nav-link {% if request.path == '/contact/' %}active{% endif %}" href="{% url 'contact' %}">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% static 'resume/resume.pdf' %}" target="_blank">Resume</a>
