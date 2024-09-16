@@ -1,0 +1,35 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5 m-2 text-danger" href="{% url 'home' %}">PortFolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-center align-items-center me-5" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% static 'resume/resume.pdf' %}" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <ul class="navbar-nav">
+          <li>
+            <a class="btn btn-outline-danger me-3" href="{% url 'contact' %}">Let's Talk</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>

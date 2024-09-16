@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(20,0,30);
+}
+
+.navbar-nav .nav-link{
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover{
+    font-weight: bold;
+    color: #4fffb0;
+} 
+
+.navbar-dark{
+    background-color: rgb(18,1,46);
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+.title {
+    color: #4fffb0;
+}
+
+.name {
+    color: #fff;
+}
+
+.social-links{
+    overflow: hidden;
+    border: 2px solid #E6E6FA;
+    border-radius: 20%;
+}
+
+.about-image{
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+.projects-item {
+    overflow: hidden;
+    width: 20rem;
+    margin: 1rem;
+    background: #2c2c6c;
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+} 
+
+.projects-item h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.projects-item p {
+    line-height: 20px;
+    font-size: 0.9rem;
+}

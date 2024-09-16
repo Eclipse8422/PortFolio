@@ -1,0 +1,31 @@
+{% extends 'casebook/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="row my-5">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+            <div> 
+                <img class="rounded-circle" style="width: 400px; height: 420px; border: 2px solid #ccc" src="{% static '/images/avatar.jpg' %}" alt="Image">
+            </div>   
+        </div>
+    </div>
+    <div class="col-12 text-center mt-5">
+        <h4 class="title">Hello, I'm</h4>
+        <div class="name">
+            <h1>Harsh Khantwal</h1> 
+            <h1>Python Developer</h1>
+        </div>
+    </div>
+    <div class="col-12 text-center mt-5">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+            <a href="https://www.linkedin.com/in/harshkhantwal/" target="_blank">
+                <img class="social-links ms-3" src="{% static 'images/linkedin.png' %}" alt="LinkedIn" width="50px" height="50px" > 
+            </a>
+            <a href="https://github.com/Eclipse8422/" target="_blank">
+                <img class="social-links ms-3" src="{% static 'images/Github.png' %}" alt="GitHub" width="50px" height="50px"> 
+            </a>
+            <a href="https://x.com/KhantwalHarsh" target="_blank">
+                <img class="social-links ms-3" src="{% static 'images/twitter.png' %}" alt="Twitter" width="50px" height="50px"> 
+            </a>
+        </div>
+    </div>
+{% endblock content %}

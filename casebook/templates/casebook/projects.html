@@ -1,0 +1,19 @@
+{% extends 'casebook/base.html'%}
+{% load static %}
+{% block content %}
+
+
+<div class="row my-5 justify-content-center">
+    {% for project in projects_show %}
+        <div class="projects-item items-center text-light">
+            <h1 class="h1 mb-3">{{ project.title }}</h1>
+            <p class="text-justify">{{ project.desc }}</p>
+            <div class="buttons d-flex justify-content-center">
+                <a href="https://github.com/Eclipse8422/PortFolio" target="_blank" class="btn btn-outline-info ms-2">GitHub</a>
+                <a href="" target="_blank" class="btn btn-outline-info ms-2">Live Link</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
