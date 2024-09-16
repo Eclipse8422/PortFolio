@@ -17,7 +17,6 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 CSRF_TRUSTED_ORIGINS= ["https://web-production-b080.up.railway.app"]
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
