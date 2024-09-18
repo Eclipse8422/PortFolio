@@ -1,11 +1,17 @@
 {% load static %}
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
+      <!-- Logo / Brand -->
       <a class="navbar-brand ms-5 m-2 text-danger" href="{% url 'home' %}">PortFolio</a>
+      
+      <!-- Toggler for mobile view -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse d-flex justify-content-center align-items-center me-5" id="navbarNav">
-        <ul class="navbar-nav" style="margin-right: 10px;">
+      
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-center me-5" id="navbarNav">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'home' %}">Home</a>
           </li>
@@ -23,9 +29,11 @@
           </li>
         </ul>
       </div>
+
+      <!-- Call to action button -->
       <div class="d-flex justify-content-center align-items-center">
         <ul class="navbar-nav">
-          <li>
+          <li class="nav-item">
             <a class="btn btn-outline-danger me-3" href="{% url 'contact' %}">Let's Talk</a>
           </li>
         </ul>
