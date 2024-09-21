@@ -1,2 +1,2 @@
 # PortFolio
-A Personal Portfolio App build with Django.
+A Personal Portfolio App built with Django.
